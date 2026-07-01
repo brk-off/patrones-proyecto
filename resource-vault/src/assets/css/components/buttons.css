@@ -1,0 +1,68 @@
+/* css/components/buttons.css */
+
+/* ============= */
+/* CLASE BASE */
+/* ============= */
+
+.btn{
+    padding: 12px 26px; 
+
+    cursor: pointer;
+    outline: none;
+    font-weight: bolder;
+    color: var(--text-primary);
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    transition: 
+        transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+        background-color 0.3s ease,
+        border-color 0.3s ease; 
+}
+.btn:hover{
+    transform: translateY(-4px) scale(1.03); 
+}
+.btn:active {
+    transform: translateY(1px) scale(0.97);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* ============= */
+/* VARIACIONES */
+/* ============= */
+
+.btn.secondary-btn{
+    border-color: var(--border-color); 
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.btn.secondary-btn:hover {
+    border-color: var(--border-color-hover); 
+    background-color: var(--bg-card-hover);
+}
+
+
+.btn.main-btn{
+    border-color: var(--accent); 
+    background-color: var(--accent);
+    box-shadow: 0 4px 6px rgba(34, 197, 94, 0.2);
+}
+.btn.main-btn:hover{
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover); 
+    box-shadow: 0 4px 8px rgba(34, 197, 94, 0.4);
+}
+
+
+.btn.danger-btn{
+    border-color: var(--danger); 
+    background-color: var(--danger);
+    box-shadow: 0 4px 6px rgba(239, 68, 68, 0.2);
+}
+.btn.danger-btn:hover{
+    background-color: var(--danger-hover);
+    border-color: var(--danger-hover); 
+    box-shadow: 0 4px 8px rgba(239, 68, 68, 0.4);
+}

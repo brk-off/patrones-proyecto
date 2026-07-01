@@ -1,0 +1,33 @@
+/* css/base/reset.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: var(--font-sans);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+a{
+    text-decoration: none;
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+}
+input {
+    all: unset;
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+}
+li{
+    list-style: none;
+}
